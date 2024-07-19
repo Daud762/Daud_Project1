@@ -1,0 +1,464 @@
+/* Goggle Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #070035;
+}
+
+nav {
+    height: 20vh;
+    width: 100%;
+    animation: nav 5s ease-in-out;
+}
+
+
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a:after{
+    content: "";
+    position: absolute;
+    background-color: #FDBA00;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+a:hover:after{
+    width: 100%;
+}
+a.active,
+a:hover {
+    color: #FDBA00;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* Hingol-Home-Section */
+.header {
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/Images/Khunjerab-header.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header .header-content {
+    width: 75rem;
+    height: 60vh;
+    /* background-color: red; */
+    margin: 5vh;
+}
+
+.header-content #heading-cont {
+    font-size: 3rem;
+    color: blue;
+    padding: 80px 40px 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+}
+
+#heading-cont::after {
+    content: "";
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        content: "National Park!";
+        color: #FDBA00;
+    }
+
+    40% {
+        content: "Wildlife!";
+        color: #FDBA00;
+    }
+
+    60% {
+        content: "Gallery!";
+        color: #FDBA00;
+    }
+
+    100% {
+        content: "Management!";
+        color: #FDBA00;
+    }
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 30px 40px;
+}
+
+.header-content p span {
+    color: #FDBA00;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+/* Hingol Main Content */
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.main-content .head1 {
+    padding: 50px 0px 0px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.head1 span {
+    color: #FDBA00;
+}
+
+.main-content .para1 {
+    text-align: center;
+    color: #575757;
+    padding: 20px 10px;
+    font-size: 1.3rem;
+}
+
+.main-content1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px 0px;
+}
+
+.main-content1 .content {
+    width: 30rem;
+    height: 75vh;
+    margin: 20px 2px;
+}
+
+.content img {
+    width: 30rem;
+    height: 75vh;
+}
+
+.content .head2 {
+    padding: 10px 10px 0px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.head2 span {
+    color: #FDBA00;
+}
+
+.content .para2 {
+    font-size: 17px;
+    color: #575757;
+    padding: 20px 10px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Main-Content2 */
+.main-content2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px 0px;
+}
+
+.main-content2 .content1 {
+    width: 30rem;
+    height: 75vh;
+    margin: 20px 2px;
+}
+
+.content1 .head2 {
+    padding: 10px 10px 0px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.content1 .para3 {
+    font-size: 17px;
+    color: #575757;
+    padding: 20px 10px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content1 img{
+    width: 30rem;
+    height: 75vh; 
+}
+
+.main-content3 .head3{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.main-content3 .para4{
+    text-align: start;
+    color: #575757;
+    font-size: 1.2rem;
+    padding: 20px 40px 6%;
+}
+
+.btn a{
+    margin: 5% 3%;
+    border: 2px solid #FDBA00;
+    padding: 8px 3% 0% 3%;
+    font-size: 1.5em;
+    border-radius: 5px;
+    background-color: #FDBA00;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+   }
+   .btn a:hover{
+       color: #000;
+       background-color: transparent;
+       border: 2px solid #FDBA00;
+       border-radius: 5px;
+       cursor: pointer;
+       text-decoration: none;
+   }
+
+/* Footer Section */
+.header-content6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+    margin: 80px 0px 0px;
+}
+
+.footer-Section {
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 0px 0px;
+}
+
+.footer-Section marquee {
+    font-size: 2rem;
+    background-color: #FDBA00;
+    max-width: 100%;
+    color: #000;
+    height: 10vh;
+    padding: 12px 0px;
+}
+
+.footer-Section .footer {
+    width: 18rem;
+    height: 30vh;
+    background-color: #fff;
+    margin: 50px 10px;
+}
+
+.footer .head8 {
+    font-size: 1.3rem;
+    padding: 20px;
+}
+
+.footer label {
+    color: rgb(135, 135, 135);
+    font-size: 1rem;
+    padding: 20px;
+}
+
+.footer input {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 12px 90px 12px 15px;
+    border: 2px solid #FDBA00;
+    border-radius: 60px;
+}
+
+::placeholder {
+    font-size: 14px;
+    color: rgb(135, 135, 135);
+}
+
+.footer .btn4 {
+    margin: 0px 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 60px;
+    color: #fff;
+    background-color: #FDBA00;
+    border: 2px solid #FDBA00;
+    transition: 0.8s ease-in-out;
+}
+
+.btn4:hover {
+    color: #fff;
+    background-color: #daa000;
+    border: 2px solid #daa000;
+    cursor: pointer;
+}
+
+.footer .info {
+    margin: 20px;
+    color: #000;
+}
+
+.footer .info a {
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: #FDBA00;
+}
+
+.footer .Footer-icons {
+    margin: 20px;
+}
+
+.footer .Footer-icons a {
+    font-size: 2rem;
+    padding: 0px 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer .para6 {
+    margin: 20px;
+}
+
+.footer-copy {
+    width: 100%;
+    background-color: #fff;
+    height: 20vh;
+    margin: 10px 0px 0px;
+}
+
+.footer-copy .para7 {
+    color: #000;
+    padding: 30px;
+    text-align: center;
+}
+@media (max-width: 520px){
+    .footer-Section marquee{
+        font-size: 35px;
+        padding: 20px 0px;
+    }
+}
+
+
+
+
+
+/* Navbar @MediaQuery */
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 10px;
+        padding-left: 0px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        font-size: 2em;
+        padding-right: 10px;
+        padding-top: 12px;
+        display: block;
+        margin: 0%;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        min-height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        z-index: 1;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20% 0%;
+        line-height: 22%;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:active,
+    a:hover {
+        background: none;
+        color: #FDBA00;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
